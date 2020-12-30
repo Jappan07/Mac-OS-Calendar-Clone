@@ -11,4 +11,4 @@ npm start
  </img>
 
  ### Deployed
-[Link to the deployed app...]()
+[Link to the deployed app...](https://macos-calendar-clone.web.app/)
