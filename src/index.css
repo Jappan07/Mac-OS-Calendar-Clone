@@ -1,5 +1,17 @@
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
+}
+
+html {
+  --top-spacing: 110px;
+}
+
+body {
+  scroll-padding-top: var(--top-spacing);
+
+  margin: var(--top-spacing) auto;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;

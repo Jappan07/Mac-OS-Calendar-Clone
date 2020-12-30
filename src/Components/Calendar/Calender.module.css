@@ -1,0 +1,76 @@
+.Months {
+  color: #e6e5e6;
+}
+
+.Months .Week {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  scroll-snap-align: start;
+}
+
+.Months .Week .Date {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  height: 200px;
+  border-right: 1px solid #e6e5e6;
+  border-bottom: 1px solid #e6e5e6;
+  padding: 8px 8px 0 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.Months .Week .Date:last-child {
+  border-right: 0;
+}
+
+.Months .Week .Date .Text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30px;
+  width: 30px;
+  padding: 2px;
+}
+
+.Months .Week .Date .Text.Active {
+  background-color: red;
+  color: white;
+  font-weight: 600;
+  border-radius: 50%;
+}
+
+.Months .Week .Sunday {
+  background: #f8f7f8;
+  color: #8d8d8d;
+}
+
+.Months .Week .ActiveMonth {
+  color: black;
+}
+
+.Months .Week .Sunday.ActiveMonth {
+  color: #5f5f5f;
+}
+
+.Months .Month {
+  height: 32px;
+  width: 32px;
+  margin-top: 4px;
+  margin-right: 0;
+}
+/*# sourceMappingURL=Calender.module.css.map */
