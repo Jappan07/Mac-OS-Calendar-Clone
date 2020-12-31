@@ -7,7 +7,7 @@ npm install
 npm start
 </pre>
 ### Demo
- <img src="./src/assets/appDemo.gif">
+ <img src="./assets/appDemo.gif">
  </img>
 
  ### Deployed
