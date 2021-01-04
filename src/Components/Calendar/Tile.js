@@ -35,7 +35,7 @@ const Tile = (props) => {
     if (props.activeMonth) {
         styleDateClasses.push(classes.ActiveMonth)
     }
-    if (props.value === DATE.getDate() - 20) {
+    if (props.value === DATE.getDate()) {
         if ((props.value === 1 && (props.month - 1) === DATE.getMonth()) || (props.value !== 1 && (props.month - 1) === DATE.getMonth())) {
             styleSpanClasses.push(classes.Active)
             span = (

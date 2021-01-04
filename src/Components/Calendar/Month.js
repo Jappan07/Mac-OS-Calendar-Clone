@@ -8,7 +8,7 @@ const Month = (props) => {
     useEffect(() => {
         obs = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
-                if (entry.intersectionRatio >= 0.75) {
+                if (entry.intersectionRatio >= 0.8) {
                     props.onVisible(props.monthId)
                 }
             })

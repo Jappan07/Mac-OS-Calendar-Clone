@@ -30,7 +30,7 @@ export const generateDateMatrix = (activeMonth) => {
     for (let i = 0; i < startingDayOfTheYear; i++) {
         matrix[0][i][0] = dateConstants.DAYSINMONTH[11] - (startingDayOfTheYear - 1) + i
     }
-    let week = 0, k = startingDayOfTheYear;
+    let week = 0, k = startingDayOfTheYear + 1;
     for (let i = 0; i < dateConstants.MONTHSINYEAR; i++) {
         for (let j = 0; j < dateConstants.DAYSINMONTH[i]; j++) {
             matrix[week][k][0] = j + 1

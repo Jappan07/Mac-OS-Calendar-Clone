@@ -4,9 +4,13 @@ import { MONTHNAMES } from "../../../utilities/global-constants"
 
 const NavigationButtonControls = (props) => {
     const [currentMonth, setCurrentMonth] = useState(0)
+
     const executeScrollToday = () => {
         const element = document.getElementById("scrollTo")
-        element.scrollIntoView()
+        const yOffset = -500;
+        const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+        // element.scrollIntoView()
         console.log("This is " + element)
     }
 
