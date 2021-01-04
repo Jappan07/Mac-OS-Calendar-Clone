@@ -18,6 +18,9 @@ const NavigationButtonControls = (props) => {
         if (currentMonth >= 12) {
             setCurrentMonth(11)
         }
+        else if (currentMonth < 0) {
+            return null
+        }
         else {
             setCurrentMonth(currentMonth => currentMonth + 1)
             const element = document.getElementById(MONTHNAMES[currentMonth])
@@ -28,6 +31,9 @@ const NavigationButtonControls = (props) => {
     const executeScrollPrev = () => {
         if (currentMonth <= -1) {
             setCurrentMonth(0)
+        }
+        else if (currentMonth > 11) {
+            return null
         }
         else {
             setCurrentMonth(currentMonth => currentMonth - 1)
